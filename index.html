@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/54107645be.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="image/images/logo.png" class="logo" alt="Logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, It's <span>Sapna</span> <br />Pandey From Bangalore</h1>
+          <br />
+          <p class="text-animation">I'm a <span id="animated-text"></span></p>
+        </div>
+      </div>
+    </div>
+    <!-- -------------about------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image/images/profile.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I'm <strong>Sapna Kumari Pandey</strong>, a passionate
+              <strong>Frontend Developer</strong> with over
+              <strong>1 year of experience</strong> in developing dynamic and
+              responsive web applications. I specialize in
+              <strong>Angular, React, and full-stack development</strong>,
+              crafting solutions that are user-centric and efficient. With a
+              strong foundation in <strong>HTML5, CSS3, JavaScript</strong>, and
+              hands-on experience in
+              <strong
+                >API integration, performance optimization, and database
+                management</strong
+              >, I take pride in delivering well-designed, scalable
+              applications. Outside of coding, I enjoy mentoring new learners in
+              web development and actively contribute to hackathons and coding
+              challenges, winning the
+              <strong>Smart India Hackathon 2019</strong>.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages:</span><br />HTML5, CSS3, JavaScript,
+                  TypeScript, Python
+                </li>
+                <li>
+                  <span>Frontend Frameworks:</span><br />Angular, React.js,
+                  Next.js, Bootstrap, Material-UI
+                </li>
+                <li>
+                  <span>Backend & API Development:</span><br />Node.js,
+                  Express.js, RESTful APIs
+                </li>
+                <li><span>Database:</span><br />MySQL, MongoDB</li>
+                <li><span>Web Design:</span><br />SASS, Figma, JQuery</li>
+                <li>
+                  <span>Tools & Technologies:</span><br />Git, GitHub, Docker,
+                  VS Code
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-2023</span><br />Frontend Developer at Digitele
+                  Networks
+                </li>
+                <li>
+                  <span>2023-2024</span><br />Full-Stack Developer Intern at
+                  Tutedude
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2017-2021 | Anna University</span><br />Bachelor of
+                  Engineering (Electronics & Communication Engineering) at
+                  Coimbatore
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------services----------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Development (Angular & React)</h2>
+            <p>
+              Develop responsive and visually engaging web applications using
+              modern frontend frameworks such as Angular and React, ensuring
+              optimal performance, accessibility, and user experience across all
+              devices.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Web Design & UI/UX</h2>
+            <p>
+              Provide web design services using tools like Bootstrap,
+              Material-UI, and Figma to create sleek, user-friendly interfaces.
+              Expertise in adaptive and responsive design ensures seamless
+              experiences across browsers and devices.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>API Integration & Full-Stack Development</h2>
+            <p>
+              Implement and integrate RESTful APIs into web applications using
+              frameworks like Node.js and Express.js. Develop full-stack
+              applications using both frontend and backend technologies,
+              ensuring efficient and scalable systems
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------portfolio----------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="image/images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Weather API Application</h3>
+              <p>
+                Developed a weather forecasting application that fetches
+                real-time weather data using a public API, providing
+                location-specific weather reports.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>The Killer Website: Food Ordering Platform</h3>
+              <p>
+                Created a dynamic food ordering website using advanced web
+                technologies, enabling users to browse menus, add items to
+                carts, and place orders seamlessly.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>React.js Keeper App</h3>
+              <p>
+                Developed a note-taking app using React.js, mimicking Google
+                Keep functionality, with dynamic note creation, deletion, and
+                persistent storage features.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ---------------contact----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> sapnapandey.sash@gmail.com</p>
+            <p><i class="fas fa-phone-square"></i> 7305747110</p>
+            <br />
+            <div class="social-icons">
+              <a href="https://wa.me/917305747110"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://github.com/Sapna-Developer"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/nah_nah_dream?utm_source=qr&igsh=eTZqMXY4MWtja25x"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/sapnapandey05/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="image/images/SapnaPandey_CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder=" Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Sapna.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
