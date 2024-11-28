@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(image/images/bgcode.png);
+    background-image: url(images/bgcode.png);
     /* background: #080808; */
     background-size: cover;
     background-position: center;
@@ -340,14 +340,24 @@ nav .fas{
 }
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(image/images/code.png);
+        background-image: url(images/phonebg.png) ;
+        /* background-color: #262626; */
+        /* background-size: cover;
+        background-position: center;
+        position: relative; */
     }
+   
+    
     .header-text{
         margin-top: 100%;
-        font-size: 16px;
+        /* font-size: 16px; */
     }
+    /* .text-animation{
+        font-size: 23px;
+    } */
     .header-text h1{
         font-size: 30px;
+        margin-top: -78px;
     }
     nav .fas{
         display: block;
